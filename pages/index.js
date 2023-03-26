@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
+import Newblog from "@/components/Newblog";
 
 export default function Home() {
   return (
@@ -11,13 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className={styles.title}>Hunting coder</h1>
-        <div className="blogs">
-          <div className="blogItem">
-            <h3>How to learn React js in 2023</h3>
-            <p>React js hooks and all things</p>
-          </div>
-        </div>
+         <Newblog />
       </main>
     </>
   );
