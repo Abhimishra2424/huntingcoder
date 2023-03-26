@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,22 +13,21 @@ export default function Home() {
       </Head>
       <nav className={styles.mainnav}>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <Link href={"/"}><li>Home</li></Link>
+          <Link href={"/about"}><li>About</li></Link>
+          <Link href={"/blog"}><li>Blog</li></Link>
+          <Link href={"/contact"}><li>Contact</li></Link>
         </ul>
       </nav>
       <main>
-        <h1 className={styles.title} >Hunting coder</h1>
-
-        <div className='blogs' >
-           <div className='blogItem'>
-             <h3>How to learn React js in 2023</h3>
-             <p>React js hooks and all things</p>
-           </div>
+        <h1 className={styles.title}>Hunting coder</h1>
+        <div className="blogs">
+          <div className="blogItem">
+            <h3>How to learn React js in 2023</h3>
+            <p>React js hooks and all things</p>
+          </div>
         </div>
       </main>
     </>
-  )
+  );
 }
